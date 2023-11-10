@@ -40,4 +40,16 @@ export class AppComponent {
       'list-group-item-danger': server.status === 'critical'
     };
   }
+
+  onAddServer(){
+    this.servers.push({
+      name:'ssss',
+      instanceType:'xxxx',
+      status:'stable',
+      started:new Date(15, 1, 2017)
+    });
+  }
 }
+
+  
+
